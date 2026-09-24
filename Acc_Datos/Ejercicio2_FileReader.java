@@ -20,10 +20,13 @@ public class Ejercicio2_FileReader {
 
             fw.write("\nPrueba para escribir una cadena de caracteres en un fichero");
 
+            fw.close();
+
             while((v = fr.read()) != -1){
                 System.out.print((char)v);
             }
 
+            fr.close();
 
             nf.createNewFile();
 
@@ -32,12 +35,17 @@ public class Ejercicio2_FileReader {
 
             fw.write("Prueba para escribir una cadena de caracteres en un fichero");
 
+            fw.close();
+            
+
             while((v = fr.read()) != -1){
                 System.out.print((char)v);
             }
 
-            fw.close();
             fr.close();
+           
+
+            //Tarea que borre una palabra o que borre todos los que sean un mismo caracter ej la "a"
 
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
