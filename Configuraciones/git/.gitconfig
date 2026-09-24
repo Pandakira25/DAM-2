@@ -1,0 +1,24 @@
+[user]
+	name = Zoe Jastreb
+	email = zoejastreb9@gmail.com
+[core]
+	editor = nano
+	autocrlf = true
+[init]
+	defaultbranch = mmain
+[alias]
+	adog = log --all --decorate --oneline --graph
+	hibisco = "!f() { git add . && git commit -m \"$1\" && git push; }; f"
+	e = "!f() { git pull && git add . && git commit -m \"Commit de emergengia/expres\" && git push; }; f"
+	p = pull
+	pp = "!f() { git pull && git add . && git commit -m \"$1\" && git push; }; f"
+	c = clear
+	s = status
+[gui]
+	recentrepo = C:/Users/zoeja/Documents/TrabajoIntrgrador
+[difftool "sourcetree"]
+	cmd = "'' "
+[mergetool "sourcetree"]
+	cmd = "'' "
+	trustExitCode = false
+	keepBackup = false
