@@ -1,0 +1,45 @@
+WHY KRITA HAS PERFORMANCE PROBLEMS AND CRASHES
+Short version - approx. 2.5 minutes (~300 words)
+
+--------------------------------------------------
+INTRO (15 sec)
+--------------------------------------------------
+- Krita is a free, open-source painting program built with C++ and Qt.
+- Users often report lag, high memory use and crashes.
+- There is rarely one single cause: it is a mix of heavy workloads, hardware differences and limited resources.
+
+--------------------------------------------------
+MAIN PROBLEMS (1 min 15 sec)
+--------------------------------------------------
+1. Heavy workload
+   - Big canvases (4K, 8K), many layers and masks, large brushes.
+   - 16-bit and 32-bit float color use 2x to 4x more memory than 8-bit.
+
+2. CPU-based painting
+   - Brush engines mostly run on the CPU, not the GPU.
+   - A powerful graphics card does not speed up painting as much as people expect.
+
+3. Memory limits
+   - Images and undo history live in RAM.
+   - When RAM runs out, Krita uses a swap file on disk, causing freezes and crashes.
+
+4. Hardware and driver diversity
+   - Outdated graphics or tablet drivers (Wintab vs. Windows Ink) cause lag, glitches and lost pen input.
+   - A small team cannot test every hardware combination.
+
+--------------------------------------------------
+PARTIAL FIXES (45 sec)
+--------------------------------------------------
+- Update Krita, graphics drivers and tablet drivers.
+- Raise the memory limit in the performance settings and put the swap file on an SSD.
+- Lower resolution or color depth, and merge unused layers.
+- Try another canvas backend (OpenGL vs. Direct3D on Windows).
+- Turn on autosave to avoid losing work.
+
+--------------------------------------------------
+CONCLUSION (15 sec)
+--------------------------------------------------
+- Problems come from heavy workloads, CPU rendering, memory limits and hardware variety.
+- Good settings reduce most issues, but they are workarounds, not full solutions.
+
+END

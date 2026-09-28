@@ -1,0 +1,105 @@
+WHY KRITA HAS PERFORMANCE PROBLEMS AND CRASHES - EXTENDED EXPLANATION
+POR QUÉ KRITA TIENE PROBLEMAS DE RENDIMIENTO Y CRASHEOS - EXPLICACIÓN EXTENDIDA
+
+Each section has an English version followed by a Spanish version.
+Cada sección tiene una versión en inglés seguida de una en español.
+
+==================================================
+INTRO
+==================================================
+
+[EN]
+Krita is a free, open-source digital painting program built with C++ and the Qt framework. It is very powerful, but many users report lag, high memory use and occasional crashes. It is important to understand that there is rarely one single cause. Most problems come from a combination of three things: the software is doing a lot of work, it has to run on very different computers, and it is developed with limited resources.
+
+[ES]
+Krita es un programa gratuito y de código abierto para pintura digital, desarrollado con C++ y el framework Qt. Es muy potente, pero muchos usuarios reportan lag, alto consumo de memoria y crasheos ocasionales. Es importante entender que casi nunca hay una sola causa. La mayoría de los problemas vienen de una combinación de tres cosas: el programa hace mucho trabajo, tiene que funcionar en computadoras muy distintas y se desarrolla con recursos limitados.
+
+==================================================
+PROBLEM 1 / PROBLEMA 1: HEAVY WORKLOAD / CARGA DE TRABAJO PESADA
+==================================================
+
+[EN]
+Every time you make a brush stroke, Krita has to recalculate the affected part of the image and update the canvas. The amount of work depends on several factors:
+- Canvas size: a 4K or 8K canvas, or a print-size image, contains many millions of pixels. More pixels means more calculations for each stroke.
+- Number of layers: each layer, mask, filter layer and layer style must be combined into the final image. The more you stack, the more Krita has to process on every update.
+- Brush size and type: very large brushes touch many pixels at once, and complex brush engines (smudge, color mixing, textured brushes) need more calculations per dab.
+- Color depth: standard images use 8 bits per channel. 16-bit images use about 2 times more memory, and 32-bit float images about 4 times more. This gives better color precision, but it makes everything heavier.
+In short, a big, deep, multi-layer project can push even a good computer to its limits.
+
+[ES]
+Cada vez que haces un trazo, Krita tiene que recalcular la parte afectada de la imagen y actualizar el lienzo. La cantidad de trabajo depende de varios factores:
+- Tamaño del lienzo: un lienzo 4K u 8K, o una imagen de tamaño de impresión, tiene muchos millones de píxeles. Más píxeles significa más cálculos por cada trazo.
+- Cantidad de capas: cada capa, máscara, capa de filtro y estilo de capa se debe combinar en la imagen final. Cuanto más apilas, más tiene que procesar Krita en cada actualización.
+- Tamaño y tipo de pincel: los pinceles muy grandes tocan muchos píxeles a la vez, y los motores de pincel complejos (difuminado, mezcla de color, pinceles con textura) necesitan más cálculos por cada toque.
+- Profundidad de color: las imágenes normales usan 8 bits por canal. Las de 16 bits usan aproximadamente el doble de memoria, y las de 32 bits flotantes aproximadamente el cuádruple. Esto da mejor precisión de color, pero hace todo más pesado.
+En resumen, un proyecto grande, con mucha profundidad de color y muchas capas puede llevar al límite incluso a una buena computadora.
+
+==================================================
+PROBLEM 2 / PROBLEMA 2: CPU-BASED PAINTING / PINTADO BASADO EN CPU
+==================================================
+
+[EN]
+Krita's brush engines mainly run on the CPU (the processor), not on the GPU (the graphics card). This design gives a lot of flexibility and precision, and it allows very customizable brushes. The downside is that a powerful graphics card does not make painting much faster, which surprises many users. The GPU is used mostly to display the canvas (through OpenGL, or Direct3D on Windows), not to calculate the strokes. This means that painting performance depends heavily on CPU speed, the number of cores and the amount of RAM.
+
+[ES]
+Los motores de pincel de Krita se ejecutan principalmente en la CPU (el procesador), no en la GPU (la tarjeta gráfica). Este diseño da mucha flexibilidad y precisión, y permite pinceles muy personalizables. La desventaja es que una tarjeta gráfica potente no hace que pintar sea mucho más rápido, lo cual sorprende a muchos usuarios. La GPU se usa sobre todo para mostrar el lienzo (mediante OpenGL, o Direct3D en Windows), no para calcular los trazos. Esto significa que el rendimiento al pintar depende mucho de la velocidad de la CPU, el número de núcleos y la cantidad de RAM.
+
+==================================================
+PROBLEM 3 / PROBLEMA 3: MEMORY LIMITS / LÍMITES DE MEMORIA
+==================================================
+
+[EN]
+Krita stores the image in small blocks called tiles, and it also keeps an undo history so you can go back. Both use RAM. When a project is big, or the undo history is long, memory fills up quickly. When RAM runs out, Krita uses a swap file on the disk. Disks (especially hard drives) are much slower than RAM, so the program starts to freeze or lag. If memory runs out completely, Krita can crash. That is why memory is one of the most common causes of crashes. Also, the default memory and undo settings may not fit every computer, so a machine with little RAM can suffer more.
+
+[ES]
+Krita guarda la imagen en pequeños bloques llamados tiles, y además mantiene un historial de deshacer para poder retroceder. Ambos usan RAM. Cuando un proyecto es grande, o el historial de deshacer es largo, la memoria se llena rápido. Cuando se acaba la RAM, Krita usa un archivo de intercambio (swap) en el disco. Los discos (sobre todo los discos duros) son mucho más lentos que la RAM, así que el programa empieza a congelarse o a ir con lag. Si la memoria se agota por completo, Krita puede crashear. Por eso la memoria es una de las causas más comunes de crasheos. Además, la configuración por defecto de memoria y deshacer puede no ajustarse a todas las computadoras, así que un equipo con poca RAM sufre más.
+
+==================================================
+PROBLEM 4 / PROBLEMA 4: HARDWARE AND DRIVER DIVERSITY / DIVERSIDAD DE HARDWARE Y DRIVERS
+==================================================
+
+[EN]
+Krita runs on Windows, Linux and macOS, and each user has a different combination of processor, graphics card, drivers, tablet and operating system version. This creates a huge number of possible setups:
+- Graphics drivers: outdated or buggy drivers can cause visual glitches, slowdowns or crashes, especially with the canvas acceleration.
+- Tablet drivers: on Windows, Krita can use Wintab or Windows Ink. If the wrong one is used, or the drivers conflict, the pen can lag or lose pressure input.
+- Weak hardware: laptops with integrated graphics and little RAM struggle more with big projects.
+Because Krita is developed by a relatively small team and volunteers, it is impossible to test every combination. Some bugs only appear on very specific setups, which makes them hard to find and fix.
+
+[ES]
+Krita funciona en Windows, Linux y macOS, y cada usuario tiene una combinación distinta de procesador, tarjeta gráfica, drivers, tableta y versión del sistema operativo. Esto crea una cantidad enorme de configuraciones posibles:
+- Drivers gráficos: drivers desactualizados o con errores pueden causar fallos visuales, lentitud o crasheos, sobre todo con la aceleración del lienzo.
+- Drivers de tableta: en Windows, Krita puede usar Wintab o Windows Ink. Si se usa el equivocado, o los drivers entran en conflicto, el lápiz puede ir con lag o perder la sensibilidad a la presión.
+- Hardware débil: las laptops con gráficos integrados y poca RAM sufren más con proyectos grandes.
+Como Krita lo desarrolla un equipo relativamente pequeño junto con voluntarios, es imposible probar todas las combinaciones. Algunos errores solo aparecen en configuraciones muy específicas, lo que los hace difíciles de encontrar y arreglar.
+
+==================================================
+PARTIAL FIXES / ARREGLOS PARCIALES
+==================================================
+
+[EN]
+These are workarounds. They reduce the problems, but they do not remove the root causes.
+- Update Krita, graphics drivers and tablet drivers. Many bugs are already fixed in newer versions.
+- Raise the memory limit in the performance settings (only if you have enough RAM) and put the swap file on an SSD, so it is less slow when memory is full.
+- Lower the canvas resolution or the color depth when you do not need the maximum, and merge or delete unused layers.
+- Try another canvas backend (OpenGL vs. Direct3D on Windows) if you have glitches or crashes.
+- Make sure autosave is on, so a crash does not make you lose your work.
+
+[ES]
+Estos son parches. Reducen los problemas, pero no eliminan las causas de fondo.
+- Actualizar Krita, los drivers gráficos y los drivers de la tableta. Muchos errores ya están corregidos en versiones nuevas.
+- Subir el límite de memoria en la configuración de rendimiento (solo si tienes suficiente RAM) y poner el archivo de intercambio en un SSD, para que sea menos lento cuando la memoria se llena.
+- Bajar la resolución del lienzo o la profundidad de color cuando no necesites el máximo, y fusionar o eliminar las capas que no uses.
+- Probar otro backend de lienzo (OpenGL vs. Direct3D en Windows) si tienes fallos visuales o crasheos.
+- Asegurarte de que el autoguardado esté activado, para no perder tu trabajo si hay un crasheo.
+
+==================================================
+CONCLUSION / CONCLUSIÓN
+==================================================
+
+[EN]
+Krita's problems come from heavy workloads, CPU-based rendering, memory limits and the huge variety of hardware. Good settings and updated drivers reduce most issues, but they are workarounds, not complete solutions. Even so, Krita remains a very capable free tool, and it keeps improving with each release.
+
+[ES]
+Los problemas de Krita vienen de las cargas de trabajo pesadas, el renderizado por CPU, los límites de memoria y la enorme variedad de hardware. Una buena configuración y drivers actualizados reducen la mayoría de los problemas, pero son parches, no soluciones completas. Aun así, Krita sigue siendo una herramienta gratuita muy capaz y mejora con cada versión.
+
+END / FIN
