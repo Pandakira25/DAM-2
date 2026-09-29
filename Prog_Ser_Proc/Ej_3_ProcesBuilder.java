@@ -19,13 +19,30 @@ public class Ej_3_ProcesBuilder {
 
             //Mostrar por pantalla, caracter a caracter, la salida del proceso
             int c;
-            while ((c = is.read()) != 1) {
-                System.out.println((char) c);
+            while ((c = is.read()) != -1) {
+                System.out.print((char) c);
             }
 
             is.close();
 
+            //Comprobación: Consultar si el proceso hijo a terminado correctamente o no
+            //Para esto debemos esperar a que termine el proceso padre 'waitFor()'
+            //Devuelve 0 si termina correctamente y -1 si no
+
+            int exitVal;
+            exitVal = p.waitFor();
+            System.out.println("Valor de salida" + exitVal);
+
+            if(exitVal != 0){
+                while ((c = es.read()) != -1) {
+                    System.out.print((char) c);
+                }
+            }
+
+            es.close();
         } catch (IOException e) {
+            e.printStackTrace();
+        }catch(InterruptedException e){
             e.printStackTrace();
         }
     }
