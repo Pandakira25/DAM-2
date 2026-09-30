@@ -1,33 +1,46 @@
 import java.io.File;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class Actividad_encriptar_fichero {
     public static void main(String[] args) {
-        int o;
-        String clave [] = {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",""};
+        int op;
+        String orgl = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+        String cfr = "jklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghi5678901234";
+
+        HashMap <Character,Character> clave = new HashMap<>();
+
+        for(int i = 0; i < orgl.length(); i ++){
+            clave.put(orgl.charAt(i), cfr.charAt(i));
+        }
+
         String contraseña;
+        String path;
+
         Scanner sc = new Scanner(System.in);
 
        try {
         System.out.println("1- Encriptar un fichero\n2-Desencriptar un fichero\n3-Salir");
-        o = sc.nextInt();
+        op = Integer.parseInt(sc.nextLine());
 
-        if(o != 1 && o != 2 && o != 3 ){
+        if(op != 1 && op != 2 && op != 3 ){
             System.out.println("Debe ingresar una de las opciones del menú");
         }else{
-            if(o==1){
-                //
+            if(op==1){
+                //TODO: Pedir una contraseña y el archivo para encriptarlo
+                System.out.println("Ingrese la ruta de su fichero:");
+                path = sc.nextLine();
 
-            }else if(o==2){
+            }else if(op==2){
                 //
                 System.out.println("Ingrese la ruta de su fichero");
-                String ruta = sc.nextLine();
+                path = sc.nextLine();
 
-                File f = new File(ruta);
+                File f = new File(path);
 
                 if(f.exists()){
                     if(f.isFile()){
-                        //TODO:
+                        //TODO: Pedir primero el archivo y luego su contraseña
 
                     }else{
                         System.out.println("Es un directorio");
