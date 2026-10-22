@@ -1,7 +1,6 @@
 import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
-
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.transform.OutputKeys;
@@ -9,9 +8,11 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+
+//Crea el fichero binario de prueba empleados y dsp leyendolo crea con DOM el xml
+//En teoria usaria el empleados.dtd pero como java esputa no capta bien la ruta
 
 public class Actividad_16_10_26 {
 
@@ -19,8 +20,8 @@ public class Actividad_16_10_26 {
     static final int TAM_REGISTRO = 173;
     static final int LONG_CADENA = 40;
 
-    static final String FICHERO_BIN = "empleados.dat";
-    static final String FICHERO_XML = "empleados.xml";
+    static final String FICHERO_BIN = "ficheros/empleados.dat";
+    static final String FICHERO_XML = "ficheros/empleados.xml";
 
     public static void main(String[] args) {
         File bin = new File(FICHERO_BIN);
@@ -71,6 +72,9 @@ public class Actividad_16_10_26 {
             t.setOutputProperty(OutputKeys.INDENT, "yes");
             t.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
             t.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
+            //java esputa
+            // Acá la ruta del dtd complicado la vrd
+            t.setOutputProperty(OutputKeys.DOCTYPE_SYSTEM, "empleados.dtd");
             t.transform(new DOMSource(doc), new StreamResult(new File(FICHERO_XML)));
 
             System.out.println("XML generado: " + FICHERO_XML + " (" + numRegistros + " empleados)");

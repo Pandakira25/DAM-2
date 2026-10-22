@@ -1,0 +1,12 @@
+<!ELEMENT empleados (empleado*)>
+
+<!ELEMENT empleado (nombre, correo, salario, carnet, departamento)>
+<!ATTLIST empleado
+    codigo CDATA #REQUIRED
+    tipo   (T | C | S) #REQUIRED>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT correo (#PCDATA)>
+<!ELEMENT salario (#PCDATA)>
+<!ELEMENT carnet (#PCDATA)>
+<!ELEMENT departamento (#PCDATA)>
