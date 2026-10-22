@@ -1,0 +1,4 @@
+module-info.class
+com\mycompany\primer_proyecto\PrimaryController.class
+com\mycompany\primer_proyecto\SecondaryController.class
+com\mycompany\primer_proyecto\App.class
