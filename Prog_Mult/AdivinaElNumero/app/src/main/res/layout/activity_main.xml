@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity"
+    android:id="@+id/main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bk1">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="186dp"
+            android:layout_height="31dp"
+            android:fontFamily="@font/akaya_kanadaka"
+            android:text="Adivina El Número"
+            android:textColor="#013F75"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.137"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.038" />
+
+        <TextView
+            android:id="@+id/txtIntentos"
+            android:layout_width="206dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="102dp"
+            android:layout_marginTop="408dp"
+            android:layout_marginEnd="103dp"
+            android:fontFamily="@font/akaya_kanadaka"
+            android:text="Intentos restantes: 5"
+            android:textColor="#0188FE"
+            android:textSize="24sp"
+            app:layout_constrainedHeight="false"
+            app:layout_constrainedWidth="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+        <TextView
+            android:id="@+id/txtClue"
+            android:layout_width="271dp"
+            android:layout_height="73dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="322dp"
+            android:layout_marginEnd="70dp"
+            android:fontFamily="@font/akaya_kanadaka"
+            android:text="Debes adivinar el número secreto entre 1 y 100.\n"
+            android:textAlignment="center"
+            android:textColor="#0188FE"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+        <EditText
+            android:id="@+id/edtxtNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="106dp"
+            android:backgroundTint="#FEB372"
+            android:ems="10"
+            android:fontFamily="@font/akaya_kanadaka"
+            android:hint="Ingresa un número"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#FEB372"
+            android:textColorHint="#00FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtIntentos" />
+
+        <Button
+            android:id="@+id/btnComp"
+            android:layout_width="131dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="144dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginBottom="64dp"
+            android:fontFamily="@font/akaya_kanadaka"
+            android:onClick="adivinar"
+            android:text="Probar"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtxtNumber" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
