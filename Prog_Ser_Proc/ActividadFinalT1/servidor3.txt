@@ -1,0 +1,10 @@
+08:00 INFO Inicio del sistema
+08:03 INFO Usuario conectado
+08:05 INFO Actualización de seguridad aplicada
+08:09 ERROR Acceso denegado
+08:12 ERROR Certificado caducado
+08:14 INFO Certificado renovado
+08:17 INFO Usuario conectado
+08:21 ERROR Fallo de conexión
+08:23 INFO Servicio reiniciado
+08:28 INFO Usuario desconectado

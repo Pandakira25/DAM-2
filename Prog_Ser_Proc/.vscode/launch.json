@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Padre",
+            "request": "launch",
+            "mainClass": "ActividadFinalT1.Padre",
+            "projectName": "Prog_Ser_Proc_be6790a7"
+        },
+        {
+            "type": "java",
             "name": "tarea_1_3_padre",
             "request": "launch",
             "mainClass": "tarea_1_3_padre",
