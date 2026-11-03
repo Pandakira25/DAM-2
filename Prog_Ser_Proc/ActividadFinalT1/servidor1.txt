@@ -1,0 +1,10 @@
+08:00 INFO Inicio del sistema
+08:02 ERROR Fallo de conexión
+08:03 INFO Usuario conectado
+08:05 ERROR Acceso denegado
+08:07 INFO Sesión iniciada correctamente
+08:10 INFO Copia de seguridad iniciada
+08:15 ERROR Tiempo de espera agotado
+08:18 INFO Copia de seguridad completada
+08:22 INFO Usuario desconectado
+08:25 ERROR Fallo de conexión

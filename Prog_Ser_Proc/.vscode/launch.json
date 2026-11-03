@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "UsaPrimerHiloR",
+            "request": "launch",
+            "mainClass": "Hilos.UsaPrimerHiloR",
+            "projectName": "Prog_Ser_Proc_be6790a7"
+        },
+        {
+            "type": "java",
+            "name": "HilosEjemplo2",
+            "request": "launch",
+            "mainClass": "Hilos.HilosEjemplo2",
+            "projectName": "Prog_Ser_Proc_be6790a7"
+        },
+        {
+            "type": "java",
+            "name": "UsaHilosEjemplo1_V2",
+            "request": "launch",
+            "mainClass": "Hilos.UsaHilosEjemplo1_V2",
+            "projectName": "Prog_Ser_Proc_be6790a7"
+        },
+        {
+            "type": "java",
+            "name": "HilosEjemplo1",
+            "request": "launch",
+            "mainClass": "HilosEjemplo1",
+            "projectName": "Prog_Ser_Proc_be6790a7"
+        },
+        {
+            "type": "java",
+            "name": "Padre",
+            "request": "launch",
+            "mainClass": "ActividadFinalT1.Padre",
+            "projectName": "Prog_Ser_Proc_be6790a7"
+        },
+        {
+            "type": "java",
             "name": "tarea_1_3_padre",
             "request": "launch",
             "mainClass": "tarea_1_3_padre",

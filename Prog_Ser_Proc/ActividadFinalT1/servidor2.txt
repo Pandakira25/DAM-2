@@ -1,0 +1,10 @@
+08:00 INFO Inicio del sistema
+08:01 INFO Servicio de base de datos activo
+08:04 ERROR Disco casi lleno
+08:06 INFO Usuario conectado
+08:08 ERROR Acceso denegado
+08:11 INFO Consulta ejecutada correctamente
+08:13 ERROR Fallo de conexión
+08:16 INFO Reconexión exitosa
+08:20 ERROR Memoria insuficiente
+08:24 INFO Limpieza de archivos temporales
