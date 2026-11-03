@@ -53,7 +53,7 @@ public class Practica_2 {
                 raf.writeChars(ajustarDireccion(direcciones[i]));
                 raf.writeLong(facturacion[i]);
             }
-            System.out.println("1) Fichero binario creado con " + ids.length + " restaurantes.");
+            System.out.println("Creando fichero binario con " + ids.length + " restaurantes...");
         } catch (IOException e) {
             System.out.println("Error al crear el fichero binario: " + e.getMessage());
         }
@@ -81,7 +81,7 @@ public class Practica_2 {
                 bw.newLine();
                 contador++;
             }
-            System.out.println("2) Fichero de texto creado con " + contador + " líneas.");
+            System.out.println("Creando fichero de texto con " + contador + " líneas...");
         } catch (IOException e) {
             System.out.println("Error al crear el fichero de texto: " + e.getMessage());
         }
@@ -111,7 +111,7 @@ public class Practica_2 {
                 oos.writeObject(r);
                 contador++;
             }
-            System.out.println("3) Fichero de objetos creado con " + contador + " restaurantes.");
+            System.out.println("Creando fichero de objetos con " + contador + " restaurantes...");
         } catch (IOException e) {
             System.out.println("Error al crear el fichero de objetos: " + e.getMessage());
         }
@@ -122,7 +122,7 @@ public class Practica_2 {
     // ---------------------------------------------------------------
     private static void consultarPorCadena() {
         Scanner sc = new Scanner(System.in);
-        System.out.print("\n4) Introduce el id de la cadena de restaurantes: ");
+        System.out.print("\nIntroduce el id de la cadena de restaurantes que deseas consultar: ");
         int idBuscado = sc.nextInt();
 
         boolean encontrado = false;
