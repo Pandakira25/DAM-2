@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "HiloInter",
+            "request": "launch",
+            "mainClass": "Hilos.HiloInter",
+            "projectName": "Prog_Ser_Proc_be6790a7"
+        },
+        {
+            "type": "java",
             "name": "HilosJoin",
             "request": "launch",
             "mainClass": "Hilos.HilosJoin",

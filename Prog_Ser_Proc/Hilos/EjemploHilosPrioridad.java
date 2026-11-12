@@ -1,5 +1,7 @@
 package Hilos;
 
 public class EjemploHilosPrioridad {
-    main
+    public static void main(String[] args) {
+        
+    }
 }
