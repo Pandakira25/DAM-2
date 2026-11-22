@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Spinner?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
@@ -45,5 +46,10 @@
          </font>
       </Button>
       <Button fx:id="btnClearForm" layoutX="151.0" layoutY="273.0" mnemonicParsing="false" onAction="#clear" text="Limpiar" />
+      <Button fx:id="btnExit" layoutX="517.0" layoutY="20.0" mnemonicParsing="false" onAction="#exit" text="Salir">
+         <tooltip>
+            <Tooltip text="Salir de la app" />
+         </tooltip>
+      </Button>
    </children>
 </Pane>
