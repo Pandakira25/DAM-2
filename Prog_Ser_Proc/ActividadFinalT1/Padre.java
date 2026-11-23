@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Padre {
@@ -48,8 +49,6 @@ public class Padre {
                             System.out.println("Algo salió mal al analizar el archivo " + rutas[i]);
                         }
                     }
-
-                    System.out.println("El total de errores fue: " + totalErrores);
 
                 } catch (Exception e) {
                     System.out.println(e.getMessage());
