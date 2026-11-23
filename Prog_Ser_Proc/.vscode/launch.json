@@ -6,27 +6,6 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Padre",
-            "request": "launch",
-            "mainClass": "ActividadFinalT1.Padre",
-            "projectName": "Prog_Ser_Proc_50b29262"
-        },
-        {
-            "type": "java",
-            "name": "Actividad_Hilos_1_1",
-            "request": "launch",
-            "mainClass": "Hilos.Actividad_Hilos_1_1",
-            "projectName": "Prog_Ser_Proc_50b29262"
-        },
-        {
-            "type": "java",
-            "name": "Actividad_Hilos_1_2",
-            "request": "launch",
-            "mainClass": "Hilos.Actividad_Hilos_1_2",
-            "projectName": "Prog_Ser_Proc_50b29262"
-        },
-        {
-            "type": "java",
             "name": "HiloInter",
             "request": "launch",
             "mainClass": "Hilos.HiloInter",
