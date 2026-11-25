@@ -33,35 +33,35 @@ public class CtrlFormulario {
     
     
     //Método para darle funcionalidad al botóon de enviar
-@FXML
-private void send(){
-    String nombre = txfName.getText().trim();
-    String apellidos = txfSurname.getText().trim();
-    String mail = txfEmail.getText().trim();
+    @FXML
+    private void send(){
+        String nombre = txfName.getText().trim();
+        String apellidos = txfSurname.getText().trim();
+        String mail = txfEmail.getText().trim();
 
-    // Si falta algún campo, avisamos y salimos sin mostrar la info
-    if (nombre.isEmpty() || apellidos.isEmpty() || mail.isEmpty()) {
-        Alert error = new Alert(Alert.AlertType.WARNING);
-        error.setTitle("Datos incompletos");
-        error.setHeaderText("Faltan campos obligatorios");
-        error.setContentText("Debes rellenar nombre, apellidos y correo.");
-        error.showAndWait();
-        return;
+        // Si falta algún campo, avisamos y salimos sin mostrar la info
+        if (nombre.isEmpty() || apellidos.isEmpty() || mail.isEmpty()) {
+            Alert error = new Alert(Alert.AlertType.WARNING);
+            error.setTitle("Datos incompletos");
+            error.setHeaderText("Faltan campos obligatorios");
+            error.setContentText("Debes rellenar nombre, apellidos y correo.");
+            error.showAndWait();
+            return;
+        }
+
+        // Solo llegamos aquí si todo está completo
+        int edad = spnAge.getValue();
+
+        Alert alerta = new Alert(Alert.AlertType.INFORMATION);
+        alerta.setTitle("Datos del usuario");
+        alerta.setHeaderText("Formulario enviado");
+        alerta.setContentText("Nombre: " + nombre +
+                "\nApellidos: " + apellidos +
+                "\nCorreo: " + mail +
+                "\nEdad: " + edad);
+        //Lanzamos el mensaje de alerta en modo modal, quiere decir que bloquea la ejecucion de la aplicación hasta que el usuario cierre o acepte la ventana
+        alerta.showAndWait();
     }
-
-    // Solo llegamos aquí si todo está completo
-    int edad = spnAge.getValue();
-
-    Alert alerta = new Alert(Alert.AlertType.INFORMATION);
-    alerta.setTitle("Datos del usuario");
-    alerta.setHeaderText("Formulario enviado");
-    alerta.setContentText("Nombre: " + nombre +
-            "\nApellidos: " + apellidos +
-            "\nCorreo: " + mail +
-            "\nEdad: " + edad);
-    //Lanzamos el mensaje de alerta en modo modal, quiere decir que bloquea la ejecucion de la aplicación hasta que el usuario cierre o acepte la ventana
-    alerta.showAndWait();
-}
     
     @FXML
     private void clear(){
