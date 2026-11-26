@@ -94,7 +94,7 @@ public class Actividad_encriptar_fichero {
         File destino = new File(origen.getAbsoluteFile().getParentFile(), "enc_" + origen.getName());
 
         try (BufferedReader br = new BufferedReader(new FileReader(origen));
-             BufferedWriter bw = new BufferedWriter(new FileWriter(destino))) {
+            BufferedWriter bw = new BufferedWriter(new FileWriter(destino))) {
 
             // Primera línea: la contraseña sin encriptar
             bw.write("Contrasenia: " + contrasenia);

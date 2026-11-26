@@ -32,7 +32,7 @@ import com.thoughtworks.xstream.io.xml.KXml2Driver;
  *
  * Borrado lógico en el binario: ID negativo.
  */
-public class practica_4 {
+public class practica4 {
 
     static final String CARPETA = "Fich";
     static final String FICHERO_RESTAURANTES = CARPETA + "/practica_4_restaurantes.dat";
@@ -125,14 +125,14 @@ public class practica_4 {
         }
         if (raf.length() == 0) {
             String[] direcciones = {
-                "Calle Mayor 1, Madrid", "Avenida de la Constitución 22, Sevilla",
-                "Calle Larga 5, Valencia", "Plaza de España 3, Barcelona",
-                "Calle del Sol 10, Granada", "Paseo de Gracia 45, Barcelona",
-                "Calle Alcalá 100, Madrid", "Gran Vía 8, Bilbao",
-                "Calle Real 17, Zaragoza", "Rambla de Catalunya 60, Barcelona",
-                "Calle Serrano 34, Madrid", "Avenida del Puerto 12, Valencia",
-                "Calle Toledo 76, Madrid", "Calle San Fernando 9, Sevilla",
-                "Paseo Marítimo 2, Málaga"
+                    "Calle Mayor 1, Madrid", "Avenida de la Constitución 22, Sevilla",
+                    "Calle Larga 5, Valencia", "Plaza de España 3, Barcelona",
+                    "Calle del Sol 10, Granada", "Paseo de Gracia 45, Barcelona",
+                    "Calle Alcalá 100, Madrid", "Gran Vía 8, Bilbao",
+                    "Calle Real 17, Zaragoza", "Rambla de Catalunya 60, Barcelona",
+                    "Calle Serrano 34, Madrid", "Avenida del Puerto 12, Valencia",
+                    "Calle Toledo 76, Madrid", "Calle San Fernando 9, Sevilla",
+                    "Paseo Marítimo 2, Málaga"
             };
             for (int i = 0; i < direcciones.length; i++) {
                 escribirRestaurante(raf, new Restaurante(i + 1, (i / 5) + 1,
@@ -254,7 +254,7 @@ public class practica_4 {
         Element cadenas = doc.createElement("cadenas");
         raiz.appendChild(cadenas);
         String[] nombres = {"La Parrilla Dorada", "Pasta Bella", "Sushi Express",
-            "Verde y Punto", "Burger Central", "Mar de Sabores"};
+                "Verde y Punto", "Burger Central", "Mar de Sabores"};
         for (int i = 0; i < nombres.length; i++) {
             Element c = doc.createElement("cadena");
             agregarTexto(doc, c, "id", i + 1);
@@ -265,7 +265,7 @@ public class practica_4 {
         Element lista = doc.createElement("locales");
         raiz.appendChild(lista);
         String[] ciudades = {"Madrid", "Barcelona", "Valencia", "Sevilla", "Málaga",
-            "Bilbao", "Zaragoza", "Granada", "Alicante", "Valladolid"};
+                "Bilbao", "Zaragoza", "Granada", "Alicante", "Valladolid"};
         for (int i = 1; i <= 100; i++) {
             int idCadena = ((i - 1) % 6) + 1;
             Element e = doc.createElement("restaurante");
@@ -425,7 +425,7 @@ public class practica_4 {
             throw new IOException("No existe " + ruta + ". Genera primero el XML correspondiente.");
         }
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-        
+
         return factory.newDocumentBuilder().parse(f);
     }
 

@@ -1,8 +1,0 @@
-<restaurante>
-  <id>999</id>
-  <idCadena>2</idCadena>
-  <activo>true</activo>
-  <empleados>18</empleados>
-  <direccion>Calle de Ejemplo 25, Madrid</direccion>
-  <facturacion>245000</facturacion>
-</restaurante>

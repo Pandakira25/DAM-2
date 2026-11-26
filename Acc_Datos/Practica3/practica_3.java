@@ -46,10 +46,6 @@ public class practica_3 {
         //Nombre(String 30 caracteres 60 bytes)
         //Tamaño de cada Cadena de restaurante: 64 bytes
 
-        //Ficheros (dentro de la carpeta Practica3):
-        //practica_3_restaurantes.dat (fichero principal del menú)
-        //practica_3_cadenas.dat (fichero auxiliar de cadenas)
-
         //Borrado lógico: al eliminar un restaurante se guarda su ID en negativo (5 -> -5)
         //El registro sigue ocupando su sitio y se ignora en todas las opciones
         //Característica por la que se filtra en la opción 5: la cadena
@@ -57,7 +53,7 @@ public class practica_3 {
         File fichero = new File(FICHERO_RESTAURANTES);
 
         try (RandomAccessFile raf = new RandomAccessFile(fichero, "rw");
-             RandomAccessFile rafCadenas = new RandomAccessFile(FICHERO_CADENAS, "rw")) {
+            RandomAccessFile rafCadenas = new RandomAccessFile(FICHERO_CADENAS, "rw")) {
 
             inicializarCadenas(rafCadenas);
 
@@ -221,8 +217,8 @@ public class practica_3 {
         // 15 restaurantes de 3 cadenas (5 por cadena)
         int[] cadenas = {1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3};
         boolean[] activos = {true, true, false, true, true,
-                             true, true, true, false, true,
-                             true, false, true, true, true};
+                            true, true, true, false, true,
+                            true, false, true, true, true};
         int[] empleados = {12, 8, 15, 20, 9, 11, 7, 14, 18, 10, 16, 6, 13, 19, 22};
         String[] direcciones = {
             "Calle Mayor 1, Madrid",
@@ -242,8 +238,8 @@ public class practica_3 {
             "Paseo Marítimo 2, Málaga"
         };
         long[] facturacion = {150000L, 98000L, 120500L, 230000L, 87000L,
-                              175000L, 64000L, 142000L, 199999L, 110300L,
-                              260000L, 54000L, 133700L, 188000L, 305000L};
+                            175000L, 64000L, 142000L, 199999L, 110300L,
+                            260000L, 54000L, 133700L, 188000L, 305000L};
 
         for (int i = 0; i < cadenas.length; i++) {
             escribirRestaurante(raf, siguienteId(raf), cadenas[i], activos[i],
