@@ -10,6 +10,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.Spinner;
 import javafx.scene.control.SpinnerValueFactory;
 import javafx.scene.control.TextArea;
@@ -38,6 +39,8 @@ public class CtrlPrimary {
     private Button btnLimpiar;
     @FXML
     private TextArea txtaResumen;
+    @FXML
+    private Label lblPrecioTotal;
 
     @FXML
     public void initialize() {
@@ -48,6 +51,8 @@ public class CtrlPrimary {
         cmbTipoEntrada.getItems().add(t[0]);
         cmbTipoEntrada.getItems().add(t[1]);
         cmbTipoEntrada.getItems().add(t[2]);
+        
+        lblPrecioTotal.setText("Precio Total = 0€");
     }
 
     @FXML
@@ -73,13 +78,13 @@ public class CtrlPrimary {
         
         if (cmbTipoEntrada.getValue().equals(t[0])) {
             precioTotal += cantidadEntradas * preciosEntradas[0];
-            mensaje = "Entradas (" + cantidadEntradas + " x " + preciosEntradas[0] + "€: " + cantidadEntradas * preciosEntradas[0];
+            mensaje = "Entradas (" + cantidadEntradas + " x " + preciosEntradas[0] + "€: " + cantidadEntradas * preciosEntradas[0] + ")";
         } else if (cmbTipoEntrada.getValue().equals(t[1])) {
            precioTotal += cantidadEntradas * preciosEntradas[1];
-           mensaje = "Entradas (" + cantidadEntradas + " x " + preciosEntradas[1] + "€: " + cantidadEntradas * preciosEntradas[1];
+           mensaje = "Entradas (" + cantidadEntradas + " x " + preciosEntradas[1] + "€: " + cantidadEntradas * preciosEntradas[1] + ")";
         } else if (cmbTipoEntrada.getValue().equals(t[2])) {
             precioTotal += cantidadEntradas * preciosEntradas[2];
-            mensaje = "Entradas (" + cantidadEntradas + " x " + preciosEntradas[2] + "€: " + cantidadEntradas * preciosEntradas[2];
+            mensaje = "Entradas (" + cantidadEntradas + " x " + preciosEntradas[2] + "€: " + cantidadEntradas * preciosEntradas[2] + ")";
         } else if(chkRefresco.isSelected()){
             
         }
@@ -95,14 +100,14 @@ public class CtrlPrimary {
             mensaje += "\n- Refresco agregado: " + preciosAdicionales[1] + "€";
         }
         
-        mensaje += "\nEl total de su compra es: " + precioTotal + "€";
+        lblPrecioTotal.setText("Precio total= " + precioTotal + "€");
         
         txtaResumen.setText(mensaje);
     }
 
     private boolean comprobar() {
         //System.out.println(txtNombre.getText() + cmbTipoEntrada.getValue());
-        if (txtNombre.getText().isBlank() && cmbTipoEntrada.getValue() == null) {
+        if (txtNombre.getText().isBlank() || cmbTipoEntrada.getValue() == null) {
             return false;
         } else {
             return true;
