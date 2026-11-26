@@ -6,6 +6,23 @@ import java.io.RandomAccessFile;
 import java.util.Scanner;
 
 public class practica_3 {
+    //Restaurante:
+    //ID(Int 4 bytes)
+    //IdCadenaRestaurante(Int 4 bytes) Estaría en otra tabla la información de la cadena de restaurantes
+    //Activo(boolean 1 byte)
+    //Cantidad de empleados(int 4 bytes)
+    //Dirección(String 150 caracteres 300 bytes)
+    //Facturación(long 8 bytes)
+    //Tamaño de cada Restaurante: 321 bytes
+
+    //Cadena de restaurante:
+    //ID(Int 4 bytes)
+    //Nombre(String 30 caracteres 60 bytes)
+    //Tamaño de cada Cadena de restaurante: 64 bytes
+
+    //Borrado lógico: al eliminar un restaurante se guarda su ID en negativo (5 -> -5)
+    //El registro sigue ocupando su sitio y se ignora en todas las opciones
+    //Característica por la que se filtra en la opción 5: la cadena
 
     // ---------- Rutas ----------
     static final String FICHERO_RESTAURANTES = "Practica3/practica_3_restaurantes.dat";
@@ -32,23 +49,6 @@ public class practica_3 {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        //Restaurante:
-        //ID(Int 4 bytes)
-        //IdCadenaRestaurante(Int 4 bytes) Estaría en otra tabla la información de la cadena de restaurantes
-        //Activo(boolean 1 byte)
-        //Cantidad de empleados(int 4 bytes)
-        //Dirección(String 150 caracteres 300 bytes)
-        //Facturación(long 8 bytes)
-        //Tamaño de cada Restaurante: 321 bytes
-
-        //Cadena de restaurante:
-        //ID(Int 4 bytes)
-        //Nombre(String 30 caracteres 60 bytes)
-        //Tamaño de cada Cadena de restaurante: 64 bytes
-
-        //Borrado lógico: al eliminar un restaurante se guarda su ID en negativo (5 -> -5)
-        //El registro sigue ocupando su sitio y se ignora en todas las opciones
-        //Característica por la que se filtra en la opción 5: la cadena
 
         File fichero = new File(FICHERO_RESTAURANTES);
 
@@ -183,7 +183,7 @@ public class practica_3 {
     }
 
     private static void escribirRestaurante(RandomAccessFile raf, int id, int idCadena,
-            boolean activo, int empleados, String direccion, long facturacion) throws IOException {
+                                            boolean activo, int empleados, String direccion, long facturacion) throws IOException {
         raf.seek(raf.length());
         raf.writeInt(id);
         raf.writeInt(idCadena);
@@ -193,8 +193,7 @@ public class practica_3 {
         raf.writeLong(facturacion);
     }
 
-    private static void mostrarRestaurante(RandomAccessFile raf, RandomAccessFile rafCadenas,
-            long base) throws IOException {
+    private static void mostrarRestaurante(RandomAccessFile raf, RandomAccessFile rafCadenas, long base) throws IOException {
         raf.seek(base);
         int id = raf.readInt();
         int idCadena = raf.readInt();
@@ -312,7 +311,7 @@ public class practica_3 {
             long base = (long) i * TAM_REGISTRO;
             raf.seek(base);
             int id = raf.readInt();
-            int cadena = raf.readInt();
+            int cadena = raf.readInt(); //Foreign key
             if (id > 0 && cadena == idCadena) {
                 mostrarRestaurante(raf, rafCadenas, base);
                 encontrados++;

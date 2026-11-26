@@ -21,14 +21,12 @@ import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.KXml2Driver;
 
 /*
- * Practica 4 - Restaurantes y cadenas de restaurantes
- * Los ficheros que utiliza el programa se guardan dentro de Practica4.
- *
- * El fichero binario mantiene el formato de practica_3:
  * Restaurante: int id, int idCadena, boolean activo, int empleados,
  *             String direccion (150 caracteres), long facturacion.
  * Tamaño: 321 bytes.
- * Cadena: int id, String nombre (30 caracteres). Tamaño: 64 bytes.
+ *
+ * Cadena: int id, String nombre (30 caracteres).
+ * Tamaño: 64 bytes.
  *
  * Borrado lógico en el binario: ID negativo.
  */
@@ -216,9 +214,10 @@ public class practica4 {
     }
 
     // -----------------------------------------------------------------
-// 4. Serializar y deserializar un restaurante con XStream
-// -----------------------------------------------------------------
+    // 4. Serializar y deserializar un restaurante con XStream
+    // -----------------------------------------------------------------
     private static void xstreamEjemplo() throws Exception {
+        //Objeto de simulación
         Restaurante r = new Restaurante(999, 2, true, 18,
                 "Calle de Ejemplo 25, Madrid", 245000L);
 

@@ -123,7 +123,7 @@ public class Practica_2 {
     private static void consultarPorCadena() {
         Scanner sc = new Scanner(System.in);
         System.out.print("\nIntroduce el id de la cadena de restaurantes que deseas consultar: ");
-        int idBuscado = sc.nextInt();
+        int idBuscado = Integer.parseInt(sc.nextLine());
 
         boolean encontrado = false;
 
