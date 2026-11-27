@@ -25,8 +25,8 @@ public class practica_3 {
     //Característica por la que se filtra en la opción 5: la cadena
 
     // ---------- Rutas ----------
-    static final String FICHERO_RESTAURANTES = "Practica3/practica_3_restaurantes.dat";
-    static final String FICHERO_CADENAS = "Practica3/practica_3_cadenas.dat";
+    static final String FICHERO_RESTAURANTES = "DATs/practica_3_restaurantes.dat";
+    static final String FICHERO_CADENAS = "DATs/practica_3_cadenas.dat";
 
     // ---------- Restaurantes ----------
     // POSICION_X = byte dentro del registro donde empieza el campo X

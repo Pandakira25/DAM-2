@@ -1,0 +1,1131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<restaurantes>
+    <cadenas>
+        <cadena>
+            <id>1</id>
+            <nombre>La Parrilla Dorada</nombre>
+        </cadena>
+        <cadena>
+            <id>2</id>
+            <nombre>Pasta Bella</nombre>
+        </cadena>
+        <cadena>
+            <id>3</id>
+            <nombre>Sushi Express</nombre>
+        </cadena>
+        <cadena>
+            <id>4</id>
+            <nombre>Verde y Punto</nombre>
+        </cadena>
+        <cadena>
+            <id>5</id>
+            <nombre>Burger Central</nombre>
+        </cadena>
+        <cadena>
+            <id>6</id>
+            <nombre>Mar de Sabores</nombre>
+        </cadena>
+    </cadenas>
+    <locales>
+        <restaurante>
+            <id>1</id>
+            <idCadena>1</idCadena>
+            <nombreCadena>La Parrilla Dorada</nombreCadena>
+            <activo>true</activo>
+            <empleados>12</empleados>
+            <direccion>Calle 11, Madrid</direccion>
+            <facturacion>58750</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.1</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>2</id>
+            <idCadena>2</idCadena>
+            <nombreCadena>Pasta Bella</nombreCadena>
+            <activo>true</activo>
+            <empleados>19</empleados>
+            <direccion>Calle 12, Barcelona</direccion>
+            <facturacion>72500</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.2</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>3</id>
+            <idCadena>3</idCadena>
+            <nombreCadena>Sushi Express</nombreCadena>
+            <activo>true</activo>
+            <empleados>26</empleados>
+            <direccion>Calle 13, Valencia</direccion>
+            <facturacion>86250</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>3.3</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>4</id>
+            <idCadena>4</idCadena>
+            <nombreCadena>Verde y Punto</nombreCadena>
+            <activo>true</activo>
+            <empleados>33</empleados>
+            <direccion>Calle 14, Sevilla</direccion>
+            <facturacion>100000</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.4</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>5</id>
+            <idCadena>5</idCadena>
+            <nombreCadena>Burger Central</nombreCadena>
+            <activo>true</activo>
+            <empleados>40</empleados>
+            <direccion>Calle 15, Málaga</direccion>
+            <facturacion>113750</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.5</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>6</id>
+            <idCadena>6</idCadena>
+            <nombreCadena>Mar de Sabores</nombreCadena>
+            <activo>true</activo>
+            <empleados>11</empleados>
+            <direccion>Calle 16, Bilbao</direccion>
+            <facturacion>127500</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>3.6</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>7</id>
+            <idCadena>1</idCadena>
+            <nombreCadena>La Parrilla Dorada</nombreCadena>
+            <activo>true</activo>
+            <empleados>18</empleados>
+            <direccion>Calle 17, Zaragoza</direccion>
+            <facturacion>141250</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.7</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>8</id>
+            <idCadena>2</idCadena>
+            <nombreCadena>Pasta Bella</nombreCadena>
+            <activo>true</activo>
+            <empleados>25</empleados>
+            <direccion>Calle 18, Granada</direccion>
+            <facturacion>155000</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.8</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>9</id>
+            <idCadena>3</idCadena>
+            <nombreCadena>Sushi Express</nombreCadena>
+            <activo>false</activo>
+            <empleados>32</empleados>
+            <direccion>Calle 19, Alicante</direccion>
+            <facturacion>168750</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>3.9</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>10</id>
+            <idCadena>4</idCadena>
+            <nombreCadena>Verde y Punto</nombreCadena>
+            <activo>true</activo>
+            <empleados>39</empleados>
+            <direccion>Calle 20, Valladolid</direccion>
+            <facturacion>182500</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.0</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>11</id>
+            <idCadena>5</idCadena>
+            <nombreCadena>Burger Central</nombreCadena>
+            <activo>true</activo>
+            <empleados>10</empleados>
+            <direccion>Calle 21, Madrid</direccion>
+            <facturacion>196250</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.1</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>12</id>
+            <idCadena>6</idCadena>
+            <nombreCadena>Mar de Sabores</nombreCadena>
+            <activo>true</activo>
+            <empleados>17</empleados>
+            <direccion>Calle 22, Barcelona</direccion>
+            <facturacion>210000</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>4.2</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>13</id>
+            <idCadena>1</idCadena>
+            <nombreCadena>La Parrilla Dorada</nombreCadena>
+            <activo>true</activo>
+            <empleados>24</empleados>
+            <direccion>Calle 23, Valencia</direccion>
+            <facturacion>223750</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.3</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>14</id>
+            <idCadena>2</idCadena>
+            <nombreCadena>Pasta Bella</nombreCadena>
+            <activo>true</activo>
+            <empleados>31</empleados>
+            <direccion>Calle 24, Sevilla</direccion>
+            <facturacion>237500</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.4</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>15</id>
+            <idCadena>3</idCadena>
+            <nombreCadena>Sushi Express</nombreCadena>
+            <activo>true</activo>
+            <empleados>38</empleados>
+            <direccion>Calle 25, Málaga</direccion>
+            <facturacion>251250</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>4.5</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>16</id>
+            <idCadena>4</idCadena>
+            <nombreCadena>Verde y Punto</nombreCadena>
+            <activo>true</activo>
+            <empleados>9</empleados>
+            <direccion>Calle 26, Bilbao</direccion>
+            <facturacion>265000</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.6</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>17</id>
+            <idCadena>5</idCadena>
+            <nombreCadena>Burger Central</nombreCadena>
+            <activo>true</activo>
+            <empleados>16</empleados>
+            <direccion>Calle 27, Zaragoza</direccion>
+            <facturacion>278750</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.7</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>18</id>
+            <idCadena>6</idCadena>
+            <nombreCadena>Mar de Sabores</nombreCadena>
+            <activo>false</activo>
+            <empleados>23</empleados>
+            <direccion>Calle 28, Granada</direccion>
+            <facturacion>292500</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>4.8</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>19</id>
+            <idCadena>1</idCadena>
+            <nombreCadena>La Parrilla Dorada</nombreCadena>
+            <activo>true</activo>
+            <empleados>30</empleados>
+            <direccion>Calle 29, Alicante</direccion>
+            <facturacion>306250</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.9</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>20</id>
+            <idCadena>2</idCadena>
+            <nombreCadena>Pasta Bella</nombreCadena>
+            <activo>true</activo>
+            <empleados>37</empleados>
+            <direccion>Calle 30, Valladolid</direccion>
+            <facturacion>320000</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.0</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>21</id>
+            <idCadena>3</idCadena>
+            <nombreCadena>Sushi Express</nombreCadena>
+            <activo>true</activo>
+            <empleados>8</empleados>
+            <direccion>Calle 31, Madrid</direccion>
+            <facturacion>333750</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>3.1</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>22</id>
+            <idCadena>4</idCadena>
+            <nombreCadena>Verde y Punto</nombreCadena>
+            <activo>true</activo>
+            <empleados>15</empleados>
+            <direccion>Calle 32, Barcelona</direccion>
+            <facturacion>347500</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.2</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>23</id>
+            <idCadena>5</idCadena>
+            <nombreCadena>Burger Central</nombreCadena>
+            <activo>true</activo>
+            <empleados>22</empleados>
+            <direccion>Calle 33, Valencia</direccion>
+            <facturacion>361250</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.3</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>24</id>
+            <idCadena>6</idCadena>
+            <nombreCadena>Mar de Sabores</nombreCadena>
+            <activo>true</activo>
+            <empleados>29</empleados>
+            <direccion>Calle 34, Sevilla</direccion>
+            <facturacion>375000</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>3.4</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>25</id>
+            <idCadena>1</idCadena>
+            <nombreCadena>La Parrilla Dorada</nombreCadena>
+            <activo>true</activo>
+            <empleados>36</empleados>
+            <direccion>Calle 35, Málaga</direccion>
+            <facturacion>388750</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.5</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>26</id>
+            <idCadena>2</idCadena>
+            <nombreCadena>Pasta Bella</nombreCadena>
+            <activo>true</activo>
+            <empleados>7</empleados>
+            <direccion>Calle 36, Bilbao</direccion>
+            <facturacion>402500</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.6</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>27</id>
+            <idCadena>3</idCadena>
+            <nombreCadena>Sushi Express</nombreCadena>
+            <activo>false</activo>
+            <empleados>14</empleados>
+            <direccion>Calle 37, Zaragoza</direccion>
+            <facturacion>416250</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>3.7</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>28</id>
+            <idCadena>4</idCadena>
+            <nombreCadena>Verde y Punto</nombreCadena>
+            <activo>true</activo>
+            <empleados>21</empleados>
+            <direccion>Calle 38, Granada</direccion>
+            <facturacion>430000</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.8</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>29</id>
+            <idCadena>5</idCadena>
+            <nombreCadena>Burger Central</nombreCadena>
+            <activo>true</activo>
+            <empleados>28</empleados>
+            <direccion>Calle 39, Alicante</direccion>
+            <facturacion>443750</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.9</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>30</id>
+            <idCadena>6</idCadena>
+            <nombreCadena>Mar de Sabores</nombreCadena>
+            <activo>true</activo>
+            <empleados>35</empleados>
+            <direccion>Calle 40, Valladolid</direccion>
+            <facturacion>457500</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>4.0</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>31</id>
+            <idCadena>1</idCadena>
+            <nombreCadena>La Parrilla Dorada</nombreCadena>
+            <activo>true</activo>
+            <empleados>6</empleados>
+            <direccion>Calle 41, Madrid</direccion>
+            <facturacion>471250</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.1</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>32</id>
+            <idCadena>2</idCadena>
+            <nombreCadena>Pasta Bella</nombreCadena>
+            <activo>true</activo>
+            <empleados>13</empleados>
+            <direccion>Calle 42, Barcelona</direccion>
+            <facturacion>485000</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.2</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>33</id>
+            <idCadena>3</idCadena>
+            <nombreCadena>Sushi Express</nombreCadena>
+            <activo>true</activo>
+            <empleados>20</empleados>
+            <direccion>Calle 43, Valencia</direccion>
+            <facturacion>498750</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>4.3</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>34</id>
+            <idCadena>4</idCadena>
+            <nombreCadena>Verde y Punto</nombreCadena>
+            <activo>true</activo>
+            <empleados>27</empleados>
+            <direccion>Calle 44, Sevilla</direccion>
+            <facturacion>512500</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.4</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>35</id>
+            <idCadena>5</idCadena>
+            <nombreCadena>Burger Central</nombreCadena>
+            <activo>true</activo>
+            <empleados>34</empleados>
+            <direccion>Calle 45, Málaga</direccion>
+            <facturacion>526250</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.5</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>36</id>
+            <idCadena>6</idCadena>
+            <nombreCadena>Mar de Sabores</nombreCadena>
+            <activo>false</activo>
+            <empleados>5</empleados>
+            <direccion>Calle 46, Bilbao</direccion>
+            <facturacion>540000</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>4.6</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>37</id>
+            <idCadena>1</idCadena>
+            <nombreCadena>La Parrilla Dorada</nombreCadena>
+            <activo>true</activo>
+            <empleados>12</empleados>
+            <direccion>Calle 47, Zaragoza</direccion>
+            <facturacion>553750</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.7</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>38</id>
+            <idCadena>2</idCadena>
+            <nombreCadena>Pasta Bella</nombreCadena>
+            <activo>true</activo>
+            <empleados>19</empleados>
+            <direccion>Calle 48, Granada</direccion>
+            <facturacion>567500</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.8</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>39</id>
+            <idCadena>3</idCadena>
+            <nombreCadena>Sushi Express</nombreCadena>
+            <activo>true</activo>
+            <empleados>26</empleados>
+            <direccion>Calle 49, Alicante</direccion>
+            <facturacion>581250</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>4.9</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>40</id>
+            <idCadena>4</idCadena>
+            <nombreCadena>Verde y Punto</nombreCadena>
+            <activo>true</activo>
+            <empleados>33</empleados>
+            <direccion>Calle 50, Valladolid</direccion>
+            <facturacion>595000</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.0</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>41</id>
+            <idCadena>5</idCadena>
+            <nombreCadena>Burger Central</nombreCadena>
+            <activo>true</activo>
+            <empleados>40</empleados>
+            <direccion>Calle 51, Madrid</direccion>
+            <facturacion>608750</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.1</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>42</id>
+            <idCadena>6</idCadena>
+            <nombreCadena>Mar de Sabores</nombreCadena>
+            <activo>true</activo>
+            <empleados>11</empleados>
+            <direccion>Calle 52, Barcelona</direccion>
+            <facturacion>622500</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>3.2</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>43</id>
+            <idCadena>1</idCadena>
+            <nombreCadena>La Parrilla Dorada</nombreCadena>
+            <activo>true</activo>
+            <empleados>18</empleados>
+            <direccion>Calle 53, Valencia</direccion>
+            <facturacion>636250</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.3</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>44</id>
+            <idCadena>2</idCadena>
+            <nombreCadena>Pasta Bella</nombreCadena>
+            <activo>true</activo>
+            <empleados>25</empleados>
+            <direccion>Calle 54, Sevilla</direccion>
+            <facturacion>650000</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.4</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>45</id>
+            <idCadena>3</idCadena>
+            <nombreCadena>Sushi Express</nombreCadena>
+            <activo>false</activo>
+            <empleados>32</empleados>
+            <direccion>Calle 55, Málaga</direccion>
+            <facturacion>663750</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>3.5</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>46</id>
+            <idCadena>4</idCadena>
+            <nombreCadena>Verde y Punto</nombreCadena>
+            <activo>true</activo>
+            <empleados>39</empleados>
+            <direccion>Calle 56, Bilbao</direccion>
+            <facturacion>677500</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.6</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>47</id>
+            <idCadena>5</idCadena>
+            <nombreCadena>Burger Central</nombreCadena>
+            <activo>true</activo>
+            <empleados>10</empleados>
+            <direccion>Calle 57, Zaragoza</direccion>
+            <facturacion>691250</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.7</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>48</id>
+            <idCadena>6</idCadena>
+            <nombreCadena>Mar de Sabores</nombreCadena>
+            <activo>true</activo>
+            <empleados>17</empleados>
+            <direccion>Calle 58, Granada</direccion>
+            <facturacion>705000</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>3.8</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>49</id>
+            <idCadena>1</idCadena>
+            <nombreCadena>La Parrilla Dorada</nombreCadena>
+            <activo>true</activo>
+            <empleados>24</empleados>
+            <direccion>Calle 59, Alicante</direccion>
+            <facturacion>718750</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.9</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>50</id>
+            <idCadena>2</idCadena>
+            <nombreCadena>Pasta Bella</nombreCadena>
+            <activo>true</activo>
+            <empleados>31</empleados>
+            <direccion>Calle 60, Valladolid</direccion>
+            <facturacion>732500</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.0</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>51</id>
+            <idCadena>3</idCadena>
+            <nombreCadena>Sushi Express</nombreCadena>
+            <activo>true</activo>
+            <empleados>38</empleados>
+            <direccion>Calle 61, Madrid</direccion>
+            <facturacion>746250</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>4.1</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>52</id>
+            <idCadena>4</idCadena>
+            <nombreCadena>Verde y Punto</nombreCadena>
+            <activo>true</activo>
+            <empleados>9</empleados>
+            <direccion>Calle 62, Barcelona</direccion>
+            <facturacion>760000</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.2</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>53</id>
+            <idCadena>5</idCadena>
+            <nombreCadena>Burger Central</nombreCadena>
+            <activo>true</activo>
+            <empleados>16</empleados>
+            <direccion>Calle 63, Valencia</direccion>
+            <facturacion>773750</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.3</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>54</id>
+            <idCadena>6</idCadena>
+            <nombreCadena>Mar de Sabores</nombreCadena>
+            <activo>false</activo>
+            <empleados>23</empleados>
+            <direccion>Calle 64, Sevilla</direccion>
+            <facturacion>787500</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>4.4</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>55</id>
+            <idCadena>1</idCadena>
+            <nombreCadena>La Parrilla Dorada</nombreCadena>
+            <activo>true</activo>
+            <empleados>30</empleados>
+            <direccion>Calle 65, Málaga</direccion>
+            <facturacion>801250</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.5</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>56</id>
+            <idCadena>2</idCadena>
+            <nombreCadena>Pasta Bella</nombreCadena>
+            <activo>true</activo>
+            <empleados>37</empleados>
+            <direccion>Calle 66, Bilbao</direccion>
+            <facturacion>815000</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.6</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>57</id>
+            <idCadena>3</idCadena>
+            <nombreCadena>Sushi Express</nombreCadena>
+            <activo>true</activo>
+            <empleados>8</empleados>
+            <direccion>Calle 67, Zaragoza</direccion>
+            <facturacion>828750</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>4.7</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>58</id>
+            <idCadena>4</idCadena>
+            <nombreCadena>Verde y Punto</nombreCadena>
+            <activo>true</activo>
+            <empleados>15</empleados>
+            <direccion>Calle 68, Granada</direccion>
+            <facturacion>842500</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.8</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>59</id>
+            <idCadena>5</idCadena>
+            <nombreCadena>Burger Central</nombreCadena>
+            <activo>true</activo>
+            <empleados>22</empleados>
+            <direccion>Calle 69, Alicante</direccion>
+            <facturacion>856250</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.9</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>60</id>
+            <idCadena>6</idCadena>
+            <nombreCadena>Mar de Sabores</nombreCadena>
+            <activo>true</activo>
+            <empleados>29</empleados>
+            <direccion>Calle 70, Valladolid</direccion>
+            <facturacion>870000</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>3.0</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>61</id>
+            <idCadena>1</idCadena>
+            <nombreCadena>La Parrilla Dorada</nombreCadena>
+            <activo>true</activo>
+            <empleados>36</empleados>
+            <direccion>Calle 71, Madrid</direccion>
+            <facturacion>883750</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.1</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>62</id>
+            <idCadena>2</idCadena>
+            <nombreCadena>Pasta Bella</nombreCadena>
+            <activo>true</activo>
+            <empleados>7</empleados>
+            <direccion>Calle 72, Barcelona</direccion>
+            <facturacion>897500</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.2</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>63</id>
+            <idCadena>3</idCadena>
+            <nombreCadena>Sushi Express</nombreCadena>
+            <activo>false</activo>
+            <empleados>14</empleados>
+            <direccion>Calle 73, Valencia</direccion>
+            <facturacion>911250</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>3.3</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>64</id>
+            <idCadena>4</idCadena>
+            <nombreCadena>Verde y Punto</nombreCadena>
+            <activo>true</activo>
+            <empleados>21</empleados>
+            <direccion>Calle 74, Sevilla</direccion>
+            <facturacion>925000</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.4</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>65</id>
+            <idCadena>5</idCadena>
+            <nombreCadena>Burger Central</nombreCadena>
+            <activo>true</activo>
+            <empleados>28</empleados>
+            <direccion>Calle 75, Málaga</direccion>
+            <facturacion>938750</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.5</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>66</id>
+            <idCadena>6</idCadena>
+            <nombreCadena>Mar de Sabores</nombreCadena>
+            <activo>true</activo>
+            <empleados>35</empleados>
+            <direccion>Calle 76, Bilbao</direccion>
+            <facturacion>952500</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>3.6</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>67</id>
+            <idCadena>1</idCadena>
+            <nombreCadena>La Parrilla Dorada</nombreCadena>
+            <activo>true</activo>
+            <empleados>6</empleados>
+            <direccion>Calle 77, Zaragoza</direccion>
+            <facturacion>966250</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.7</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>68</id>
+            <idCadena>2</idCadena>
+            <nombreCadena>Pasta Bella</nombreCadena>
+            <activo>true</activo>
+            <empleados>13</empleados>
+            <direccion>Calle 78, Granada</direccion>
+            <facturacion>980000</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.8</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>69</id>
+            <idCadena>3</idCadena>
+            <nombreCadena>Sushi Express</nombreCadena>
+            <activo>true</activo>
+            <empleados>20</empleados>
+            <direccion>Calle 79, Alicante</direccion>
+            <facturacion>993750</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>3.9</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>70</id>
+            <idCadena>4</idCadena>
+            <nombreCadena>Verde y Punto</nombreCadena>
+            <activo>true</activo>
+            <empleados>27</empleados>
+            <direccion>Calle 80, Valladolid</direccion>
+            <facturacion>1007500</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.0</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>71</id>
+            <idCadena>5</idCadena>
+            <nombreCadena>Burger Central</nombreCadena>
+            <activo>true</activo>
+            <empleados>34</empleados>
+            <direccion>Calle 81, Madrid</direccion>
+            <facturacion>1021250</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.1</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>72</id>
+            <idCadena>6</idCadena>
+            <nombreCadena>Mar de Sabores</nombreCadena>
+            <activo>false</activo>
+            <empleados>5</empleados>
+            <direccion>Calle 82, Barcelona</direccion>
+            <facturacion>1035000</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>4.2</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>73</id>
+            <idCadena>1</idCadena>
+            <nombreCadena>La Parrilla Dorada</nombreCadena>
+            <activo>true</activo>
+            <empleados>12</empleados>
+            <direccion>Calle 83, Valencia</direccion>
+            <facturacion>1048750</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.3</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>74</id>
+            <idCadena>2</idCadena>
+            <nombreCadena>Pasta Bella</nombreCadena>
+            <activo>true</activo>
+            <empleados>19</empleados>
+            <direccion>Calle 84, Sevilla</direccion>
+            <facturacion>1062500</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.4</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>75</id>
+            <idCadena>3</idCadena>
+            <nombreCadena>Sushi Express</nombreCadena>
+            <activo>true</activo>
+            <empleados>26</empleados>
+            <direccion>Calle 85, Málaga</direccion>
+            <facturacion>1076250</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>4.5</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>76</id>
+            <idCadena>4</idCadena>
+            <nombreCadena>Verde y Punto</nombreCadena>
+            <activo>true</activo>
+            <empleados>33</empleados>
+            <direccion>Calle 86, Bilbao</direccion>
+            <facturacion>1090000</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.6</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>77</id>
+            <idCadena>5</idCadena>
+            <nombreCadena>Burger Central</nombreCadena>
+            <activo>true</activo>
+            <empleados>40</empleados>
+            <direccion>Calle 87, Zaragoza</direccion>
+            <facturacion>1103750</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.7</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>78</id>
+            <idCadena>6</idCadena>
+            <nombreCadena>Mar de Sabores</nombreCadena>
+            <activo>true</activo>
+            <empleados>11</empleados>
+            <direccion>Calle 88, Granada</direccion>
+            <facturacion>1117500</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>4.8</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>79</id>
+            <idCadena>1</idCadena>
+            <nombreCadena>La Parrilla Dorada</nombreCadena>
+            <activo>true</activo>
+            <empleados>18</empleados>
+            <direccion>Calle 89, Alicante</direccion>
+            <facturacion>1131250</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.9</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>80</id>
+            <idCadena>2</idCadena>
+            <nombreCadena>Pasta Bella</nombreCadena>
+            <activo>true</activo>
+            <empleados>25</empleados>
+            <direccion>Calle 90, Valladolid</direccion>
+            <facturacion>1145000</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.0</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>81</id>
+            <idCadena>3</idCadena>
+            <nombreCadena>Sushi Express</nombreCadena>
+            <activo>false</activo>
+            <empleados>32</empleados>
+            <direccion>Calle 91, Madrid</direccion>
+            <facturacion>1158750</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>3.1</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>82</id>
+            <idCadena>4</idCadena>
+            <nombreCadena>Verde y Punto</nombreCadena>
+            <activo>true</activo>
+            <empleados>39</empleados>
+            <direccion>Calle 92, Barcelona</direccion>
+            <facturacion>1172500</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.2</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>83</id>
+            <idCadena>5</idCadena>
+            <nombreCadena>Burger Central</nombreCadena>
+            <activo>true</activo>
+            <empleados>10</empleados>
+            <direccion>Calle 93, Valencia</direccion>
+            <facturacion>1186250</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.3</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>84</id>
+            <idCadena>6</idCadena>
+            <nombreCadena>Mar de Sabores</nombreCadena>
+            <activo>true</activo>
+            <empleados>17</empleados>
+            <direccion>Calle 94, Sevilla</direccion>
+            <facturacion>1200000</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>3.4</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>85</id>
+            <idCadena>1</idCadena>
+            <nombreCadena>La Parrilla Dorada</nombreCadena>
+            <activo>true</activo>
+            <empleados>24</empleados>
+            <direccion>Calle 95, Málaga</direccion>
+            <facturacion>1213750</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.5</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>86</id>
+            <idCadena>2</idCadena>
+            <nombreCadena>Pasta Bella</nombreCadena>
+            <activo>true</activo>
+            <empleados>31</empleados>
+            <direccion>Calle 96, Bilbao</direccion>
+            <facturacion>1227500</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.6</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>87</id>
+            <idCadena>3</idCadena>
+            <nombreCadena>Sushi Express</nombreCadena>
+            <activo>true</activo>
+            <empleados>38</empleados>
+            <direccion>Calle 97, Zaragoza</direccion>
+            <facturacion>1241250</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>3.7</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>88</id>
+            <idCadena>4</idCadena>
+            <nombreCadena>Verde y Punto</nombreCadena>
+            <activo>true</activo>
+            <empleados>9</empleados>
+            <direccion>Calle 98, Granada</direccion>
+            <facturacion>1255000</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.8</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>89</id>
+            <idCadena>5</idCadena>
+            <nombreCadena>Burger Central</nombreCadena>
+            <activo>true</activo>
+            <empleados>16</empleados>
+            <direccion>Calle 99, Alicante</direccion>
+            <facturacion>1268750</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.9</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>90</id>
+            <idCadena>6</idCadena>
+            <nombreCadena>Mar de Sabores</nombreCadena>
+            <activo>false</activo>
+            <empleados>23</empleados>
+            <direccion>Calle 100, Valladolid</direccion>
+            <facturacion>1282500</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>4.0</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>91</id>
+            <idCadena>1</idCadena>
+            <nombreCadena>La Parrilla Dorada</nombreCadena>
+            <activo>true</activo>
+            <empleados>30</empleados>
+            <direccion>Calle 101, Madrid</direccion>
+            <facturacion>1296250</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.1</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>92</id>
+            <idCadena>2</idCadena>
+            <nombreCadena>Pasta Bella</nombreCadena>
+            <activo>true</activo>
+            <empleados>37</empleados>
+            <direccion>Calle 102, Barcelona</direccion>
+            <facturacion>1310000</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.2</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>93</id>
+            <idCadena>3</idCadena>
+            <nombreCadena>Sushi Express</nombreCadena>
+            <activo>true</activo>
+            <empleados>8</empleados>
+            <direccion>Calle 103, Valencia</direccion>
+            <facturacion>1323750</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>4.3</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>94</id>
+            <idCadena>4</idCadena>
+            <nombreCadena>Verde y Punto</nombreCadena>
+            <activo>true</activo>
+            <empleados>15</empleados>
+            <direccion>Calle 104, Sevilla</direccion>
+            <facturacion>1337500</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.4</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>95</id>
+            <idCadena>5</idCadena>
+            <nombreCadena>Burger Central</nombreCadena>
+            <activo>true</activo>
+            <empleados>22</empleados>
+            <direccion>Calle 105, Málaga</direccion>
+            <facturacion>1351250</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.5</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>96</id>
+            <idCadena>6</idCadena>
+            <nombreCadena>Mar de Sabores</nombreCadena>
+            <activo>true</activo>
+            <empleados>29</empleados>
+            <direccion>Calle 106, Bilbao</direccion>
+            <facturacion>1365000</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>4.6</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>97</id>
+            <idCadena>1</idCadena>
+            <nombreCadena>La Parrilla Dorada</nombreCadena>
+            <activo>true</activo>
+            <empleados>36</empleados>
+            <direccion>Calle 107, Zaragoza</direccion>
+            <facturacion>1378750</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.7</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>98</id>
+            <idCadena>2</idCadena>
+            <nombreCadena>Pasta Bella</nombreCadena>
+            <activo>true</activo>
+            <empleados>7</empleados>
+            <direccion>Calle 108, Granada</direccion>
+            <facturacion>1392500</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>4.8</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>99</id>
+            <idCadena>3</idCadena>
+            <nombreCadena>Sushi Express</nombreCadena>
+            <activo>false</activo>
+            <empleados>14</empleados>
+            <direccion>Calle 109, Alicante</direccion>
+            <facturacion>1406250</facturacion>
+            <tieneTerraza>true</tieneTerraza>
+            <valoracion>4.9</valoracion>
+        </restaurante>
+        <restaurante>
+            <id>100</id>
+            <idCadena>4</idCadena>
+            <nombreCadena>Verde y Punto</nombreCadena>
+            <activo>true</activo>
+            <empleados>21</empleados>
+            <direccion>Calle 110, Valladolid</direccion>
+            <facturacion>1420000</facturacion>
+            <tieneTerraza>false</tieneTerraza>
+            <valoracion>3.0</valoracion>
+        </restaurante>
+    </locales>
+</restaurantes>

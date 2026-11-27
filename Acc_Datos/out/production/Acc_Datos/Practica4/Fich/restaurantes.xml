@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<restaurantes>
+    <restaurante>
+        <id>1</id>
+        <idCadena>1</idCadena>
+        <nombreCadena>La Parrilla Dorada</nombreCadena>
+        <activo>true</activo>
+        <empleados>6</empleados>
+        <direccion>Calle Mayor 1, Madrid</direccion>
+        <facturacion>54000</facturacion>
+    </restaurante>
+    <restaurante>
+        <id>2</id>
+        <idCadena>1</idCadena>
+        <nombreCadena>La Parrilla Dorada</nombreCadena>
+        <activo>true</activo>
+        <empleados>7</empleados>
+        <direccion>Avenida de la Constitución 22, Sevilla</direccion>
+        <facturacion>66500</facturacion>
+    </restaurante>
+    <restaurante>
+        <id>3</id>
+        <idCadena>1</idCadena>
+        <nombreCadena>La Parrilla Dorada</nombreCadena>
+        <activo>false</activo>
+        <empleados>8</empleados>
+        <direccion>Calle Larga 5, Valencia</direccion>
+        <facturacion>79000</facturacion>
+    </restaurante>
+    <restaurante>
+        <id>4</id>
+        <idCadena>1</idCadena>
+        <nombreCadena>La Parrilla Dorada</nombreCadena>
+        <activo>true</activo>
+        <empleados>9</empleados>
+        <direccion>Plaza de España 3, Barcelona</direccion>
+        <facturacion>91500</facturacion>
+    </restaurante>
+    <restaurante>
+        <id>5</id>
+        <idCadena>1</idCadena>
+        <nombreCadena>La Parrilla Dorada</nombreCadena>
+        <activo>true</activo>
+        <empleados>10</empleados>
+        <direccion>Calle del Sol 10, Granada</direccion>
+        <facturacion>104000</facturacion>
+    </restaurante>
+    <restaurante>
+        <id>6</id>
+        <idCadena>2</idCadena>
+        <nombreCadena>Pasta Bella</nombreCadena>
+        <activo>true</activo>
+        <empleados>11</empleados>
+        <direccion>Paseo de Gracia 45, Barcelona</direccion>
+        <facturacion>116500</facturacion>
+    </restaurante>
+    <restaurante>
+        <id>7</id>
+        <idCadena>2</idCadena>
+        <nombreCadena>Pasta Bella</nombreCadena>
+        <activo>false</activo>
+        <empleados>12</empleados>
+        <direccion>Calle Alcalá 100, Madrid</direccion>
+        <facturacion>129000</facturacion>
+    </restaurante>
+    <restaurante>
+        <id>8</id>
+        <idCadena>2</idCadena>
+        <nombreCadena>Pasta Bella</nombreCadena>
+        <activo>true</activo>
+        <empleados>13</empleados>
+        <direccion>Gran Vía 8, Bilbao</direccion>
+        <facturacion>141500</facturacion>
+    </restaurante>
+    <restaurante>
+        <id>9</id>
+        <idCadena>2</idCadena>
+        <nombreCadena>Pasta Bella</nombreCadena>
+        <activo>true</activo>
+        <empleados>14</empleados>
+        <direccion>Calle Real 17, Zaragoza</direccion>
+        <facturacion>154000</facturacion>
+    </restaurante>
+    <restaurante>
+        <id>10</id>
+        <idCadena>2</idCadena>
+        <nombreCadena>Pasta Bella</nombreCadena>
+        <activo>true</activo>
+        <empleados>15</empleados>
+        <direccion>Rambla de Catalunya 60, Barcelona</direccion>
+        <facturacion>166500</facturacion>
+    </restaurante>
+    <restaurante>
+        <id>11</id>
+        <idCadena>3</idCadena>
+        <nombreCadena>Sushi Express</nombreCadena>
+        <activo>false</activo>
+        <empleados>16</empleados>
+        <direccion>Calle Serrano 34, Madrid</direccion>
+        <facturacion>179000</facturacion>
+    </restaurante>
+    <restaurante>
+        <id>12</id>
+        <idCadena>3</idCadena>
+        <nombreCadena>Sushi Express</nombreCadena>
+        <activo>true</activo>
+        <empleados>17</empleados>
+        <direccion>Avenida del Puerto 12, Valencia</direccion>
+        <facturacion>191500</facturacion>
+    </restaurante>
+    <restaurante>
+        <id>13</id>
+        <idCadena>3</idCadena>
+        <nombreCadena>Sushi Express</nombreCadena>
+        <activo>true</activo>
+        <empleados>18</empleados>
+        <direccion>Calle Toledo 76, Madrid</direccion>
+        <facturacion>204000</facturacion>
+    </restaurante>
+    <restaurante>
+        <id>14</id>
+        <idCadena>3</idCadena>
+        <nombreCadena>Sushi Express</nombreCadena>
+        <activo>true</activo>
+        <empleados>19</empleados>
+        <direccion>Calle San Fernando 9, Sevilla</direccion>
+        <facturacion>216500</facturacion>
+    </restaurante>
+    <restaurante>
+        <id>15</id>
+        <idCadena>3</idCadena>
+        <nombreCadena>Sushi Express</nombreCadena>
+        <activo>false</activo>
+        <empleados>20</empleados>
+        <direccion>Paseo Marítimo 2, Málaga</direccion>
+        <facturacion>229000</facturacion>
+    </restaurante>
+</restaurantes>

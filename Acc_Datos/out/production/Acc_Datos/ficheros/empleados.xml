@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE empleados SYSTEM "empleados.dtd">
+<empleados>
+    <empleado codigo="1" tipo="T">
+        <nombre>Ana Lopez</nombre>
+        <correo>ana@empresa.com</correo>
+        <salario>1800.5</salario>
+        <carnet>true</carnet>
+        <departamento>10</departamento>
+    </empleado>
+    <empleado codigo="2" tipo="C">
+        <nombre>Luis Perez</nombre>
+        <correo>luis@empresa.com</correo>
+        <salario>2100.0</salario>
+        <carnet>false</carnet>
+        <departamento>20</departamento>
+    </empleado>
+    <empleado codigo="3" tipo="S">
+        <nombre>Marta Gil</nombre>
+        <correo>marta@empresa.com</correo>
+        <salario>1650.75</salario>
+        <carnet>true</carnet>
+        <departamento>30</departamento>
+    </empleado>
+</empleados>
