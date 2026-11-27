@@ -1,0 +1,1 @@
+La suma total de los numeros de su fichero es: 150
